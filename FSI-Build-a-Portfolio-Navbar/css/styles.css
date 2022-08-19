@@ -1,0 +1,28 @@
+p {
+  color: #FFFFFF;
+}
+h1 {
+    color: #007ACC;
+}
+h2 {
+    color: #007ACC;
+}
+h3 {
+    color: #007ACC;
+}
+body {
+    background-color: #1E1E1E;
+}
+li {
+    color: #FFA500;;
+}
+body {
+    cursor: url("/images/cursor.png"), auto; /*Custom cursor may only be visible on Firefox*/
+}
+
+img {
+
+/**padding: 0 0 0 5rem; Same outcome as line 26*/
+/*padding-left: 5rem;*/
+padding-left: 50rem;
+} 

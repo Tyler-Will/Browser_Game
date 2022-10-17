@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    text-align: center;
+    color: rgb(23, 6, 6);
+    background-color: rgb(242, 217, 217);
+}
+questionContainer{
+    outline: 1px black;
+    min-height: 60vh;
+    flex-grow: 5;
+    background-color: black;
+    max-width: 60%;
+    z-index: 3;
+}
+gameMode{
+    outline: 1px black;
+    min-height: 30vh;
+    max-width: 100%;
+    z-index: 3;
+    
+}
+#startGamelit{
+    height: 10vh;
+    width: 80vh;
+}
+#startGamepop{
+    height: 10vh;
+    width: 80vh;
+}
+#gameAnswers{
+    outline: 1px black;
+    min-height: 30vh;
+    max-width: 100%;
+    z-index: 3;
+   
+}
+.Answer{
+    min-height: 10vh;
+    min-width: 80vh;
+}

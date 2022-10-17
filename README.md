@@ -1,0 +1,1 @@
+A simple trivia game that I made to test my understanding of Javascript and the DOM because those are the areas I struggle with the most.

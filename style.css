@@ -17,6 +17,7 @@ gameMode{
     min-height: 30vh;
     max-width: 100%;
     z-index: 3;
+    display: block;
     
 }
 #startGamelit{
@@ -32,7 +33,7 @@ gameMode{
     min-height: 30vh;
     max-width: 100%;
     z-index: 3;
-   
+   display: none;
 }
 .Answer{
     min-height: 10vh;

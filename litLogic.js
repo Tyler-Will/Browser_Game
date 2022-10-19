@@ -17,7 +17,10 @@ let answer104= "I don't know"
 //Question
 let question2="What about this?"
 ////Answers
-
+let answer201="Yes?"
+let answer202="No?"
+let answer203="Maybe?"
+let answer204="I don't know?"
 //Question
 let question3="This?"
 ////Answers
@@ -59,7 +62,29 @@ function startGamelit(){
  gameAnswers.style.display = "block";
  gameMode.style.display = "none";
  answer1.innerHTML=`${answer101}`;
+ answer1.addEventListener("click", rightAnswer)
 answer2.innerHTML=`${answer102}`;
+answer2.addEventListener("click", wrongAnswer)
 answer3.innerHTML=`${answer103}`;
+answer3.addEventListener("click", wrongAnswer)
 answer4.innerHTML=`${answer104}`;
+answer4.addEventListener("click", wrongAnswer)
+}
+function wrongAnswer(){
+  Question.innerHTML=`${question2}`;
+  gameAnswers.style.display = "block";
+ gameMode.style.display = "none";
+ answer1.innerHTML=`${answer201}`;
+answer2.innerHTML=`${answer202}`;
+answer3.innerHTML=`${answer203}`;
+answer4.innerHTML=`${answer204}`;
+}
+function rightAnswer (){
+  Question.innerHTML=`${question2}`;
+  gameAnswers.style.display = "block";
+ gameMode.style.display = "none";
+ answer1.innerHTML=`${answer201}`;
+answer2.innerHTML=`${answer202}`;
+answer3.innerHTML=`${answer203}`;
+answer4.innerHTML=`${answer204}`;
 }

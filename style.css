@@ -39,3 +39,10 @@ gameMode{
     min-height: 10vh;
     min-width: 80vh;
 }
+#scoreBox{
+    display: none;
+}
+
+#Question{
+    display: block;
+}

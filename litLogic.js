@@ -72,7 +72,7 @@ let tally =document.getElementById("tally");
 let score =document.getElementById("score");
 
 //Tally
-let x=0
+let x=1
 const y=0
 /*let (x+y)=finalScore*/
 //
@@ -309,9 +309,10 @@ function litQuestion10/*"What is the full title of Mary Shelley's 1818 novel?"*/
 }
 
 function resultScreen(){
+  gameAnswers10.style.display = "none";
   Question.style.display="none";
   scoreBox.style.display = "block";
-  gameAnswers.style.display = "none";
+  //gameAnswers.style.display = "none";
   gameMode.style.display = "none";
 score.innerHTML=`${x};`
 }

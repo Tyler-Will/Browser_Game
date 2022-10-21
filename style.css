@@ -28,7 +28,7 @@ gameMode{
     height: 10vh;
     width: 80vh;
 }
-gameAnswers{
+.gameAnswers{
     display: block;
 }
 #gameAnswers1, #gameAnswers2,#gameAnswers3, #gameAnswers4, #gameAnswers5, #gameAnswers6,#gameAnswers7, #gameAnswers8, #gameAnswers9, #gameAnswers10{

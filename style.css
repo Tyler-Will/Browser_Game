@@ -1,24 +1,43 @@
-body{
+*{
+    outline: 1px solid red;
+    }*
+    body{
     margin: 0;
     text-align: center;
     color: rgb(23, 6, 6);
     background-color: rgb(242, 217, 217);
 }
-questionContainer{
-    outline: 1px black;
+main{
+    min-height: 10vh;
+    min-width: 10vh;
+    z-index: 3;
+    color: white;
+    background-color: rgb(113, 17, 17); 
+}
+#tallyBox{
+    font-size: 40px;
+}
+#questionContainer{
+    outline: 5px black;
     min-height: 60vh;
     flex-grow: 5;
-    background-color: black;
+    background-color: rgb(26, 4, 4);
     max-width: 60%;
     z-index: 3;
+    font-size: 60px;
 }
+button{
+    background-color: skyblue;
+    opacity: ;
+}
+
 gameMode{
+    /*display: flex;*/
     outline: 1px black;
     min-height: 30vh;
     max-width: 100%;
     z-index: 3;
-    display: block;
-    
+    width: fit-content;
 }
 #startGamelit{
     height: 10vh;
@@ -45,7 +64,16 @@ gameMode{
 #scoreBox{
     display: none;
 }
-
+#tallyBox{
+    display: none;
+}
+message{
+    color: blue;
+    font-size: 40px;
+}
+#score{
+    font-size: 100px;
+}
 #Question{
     display: block;
 }

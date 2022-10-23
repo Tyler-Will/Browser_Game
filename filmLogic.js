@@ -70,11 +70,12 @@ function film(){
   //
   let scoreBox =document.getElementById("scoreBox");
   let tally =document.getElementById("tally");
+  let tallyBox=document.getElementById("tallyBox")
   let score =document.getElementById("score");
   
   //Tally
   let x=0
-  const y=0
+  let y=1
   /*let (x+y)=finalScore*/
   //
   
@@ -102,7 +103,7 @@ function film(){
   let answer303="Dr. Brundle"
   let answer304="Dr. Patrick"
   //Question
-  let question4="Which of these films was cited as the inspiration for a Massive Attack music video for the song, Voodoo in my Blood?"
+  let question4="Which of these films was cited as the inspiration for Massive Attack's music video for their song, Voodoo in my Blood?"
   ////Answers
   let answer401="Possession"/**/
   let answer402="The Exorcist"
@@ -156,6 +157,7 @@ function film(){
    Question.innerHTML=`${question1}`;
    gameAnswers1.style.display = "block";
    gameMode.style.display = "none";
+   tallyBox.style.display="block";
    answerQ101.innerHTML=`${answer101}`;
    answerQ101.addEventListener("click", litQuestion2)
    answerQ101.addEventListener("click", rightAnswer)
@@ -168,6 +170,8 @@ function film(){
   }
   
   function litQuestion2/*"What is the name of Satan's alleged uncle in Mark Twain's novel The Mysterious Stranger?"*/(){
+    y++;
+  tally.innerHTML=`${y}`;
     Question.innerHTML=`${question2}`;
     gameAnswers1.style.display = "none";
    gameAnswers2.style.display = "block";
@@ -184,6 +188,8 @@ function film(){
   }
   
   function litQuestion3/*"What two cities are being referenced in the title of Charles Dickens's novel A Tale of Two Cities?"*/(){
+    y++;
+  tally.innerHTML=`${y}`;
     Question.innerHTML=`${question3}`;
     gameAnswers2.style.display = "none";
     gameAnswers3.style.display = "block";
@@ -200,6 +206,8 @@ function film(){
   }
   
   function litQuestion4/*"Out the following stories he had written during his lifetime which of these did H.P. Lovecraft favor the most?"*/(){
+    y++;
+  tally.innerHTML=`${y}`;
     Question.innerHTML=`${question4}`;
     gameAnswers3.style.display = "none";
     gameAnswers4.style.display = "block";
@@ -216,6 +224,8 @@ function film(){
   }
   
   function litQuestion5/*"Who was the author responsible for the epic poem, Beowulf?"*/(){
+    y++;
+  tally.innerHTML=`${y}`;
     gameAnswers4.style.display = "none";
     Question.innerHTML=`${question5}`;
     gameAnswers5.style.display = "block";
@@ -232,6 +242,8 @@ function film(){
   }
   
   function litQuestion6/*"Setanta earned his famous name Cú Chulainn after slaying ___"*/(){
+    y++;
+  tally.innerHTML=`${y}`;
     gameAnswers5.style.display = "none";
     Question.innerHTML=`${question6}`;
     gameAnswers6.style.display = "block";
@@ -248,6 +260,8 @@ function film(){
   }
   
   function litQuestion7/*"How many thetrical adaptations of Uncle Tom's Cabin did  Harriet Beecher Stowe co-write?"*/(){
+    y++;
+  tally.innerHTML=`${y}`;
     gameAnswers6.style.display = "none";
     Question.innerHTML=`${question7}`;
     gameAnswers7.style.display = "block";
@@ -264,6 +278,8 @@ function film(){
   }
   
   function litQuestion8/*"What is the title of the 1915 novel where the protagonist inexplicably wakes up as an insect?"*/(){
+    y++;
+  tally.innerHTML=`${y}`;
     gameAnswers7.style.display = "none";
     Question.innerHTML=`${question8}`;
     gameAnswers8.style.display = "block";
@@ -280,6 +296,8 @@ function film(){
   }
   
   function litQuestion9/*"The Hobbit is ____ to the Lord of the Rings"*/(){
+    y++;
+  tally.innerHTML=`${y}`;
     gameAnswers8.style.display = "none";
     Question.innerHTML=`${question9}`;
     gameAnswers9.style.display = "block";
@@ -296,6 +314,8 @@ function film(){
   }
   
   function litQuestion10/*"What is the full title of Mary Shelley's 1818 novel?"*/(){
+    y++;
+  tally.innerHTML=`${y}`;
     gameAnswers9.style.display = "none";
     Question.innerHTML=`${question10}`;
     gameAnswers10.style.display = "block";

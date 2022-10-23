@@ -338,6 +338,7 @@ function film(){
     //gameAnswers.style.display = "none";
     gameMode.style.display = "none";
   score.innerHTML=`${x};`
+  tallyBox.style.display="none";
   }
   
   

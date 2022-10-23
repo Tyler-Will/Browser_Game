@@ -1,43 +1,49 @@
 *{
     outline: 1px solid red;
     }*
+
+    #title{
+        background-color: blue;
+        font-size: 100px;
+    }
+
     body{
     margin: 0;
     text-align: center;
-    color: rgb(23, 6, 6);
-    background-color: rgb(242, 217, 217);
+    /*color: rgb(23, 6, 6);
+    background-color: rgb(242, 217, 217);*/
+    /*background-image: url("Assets/5f9c9999740569d1a4ca20a6.jpg");*/
+    background-color: #cccccc;
+    padding: 5em;
+    padding-top: 0%
 }
 main{
-    min-height: 10vh;
-    min-width: 10vh;
-    z-index: 3;
-    color: white;
-    background-color: rgb(113, 17, 17); 
+  display: ;
+  flex-direction: column;
 }
 #tallyBox{
     font-size: 40px;
 }
-#questionContainer{
-    outline: 5px black;
-    min-height: 60vh;
-    flex-grow: 5;
+#Question{
+    padding: 1em;
+    font-size: 100px;
     background-color: rgb(26, 4, 4);
-    max-width: 60%;
-    z-index: 3;
-    font-size: 60px;
+    font-size: 50px;
+    background-color: aliceblue;
 }
 button{
     background-color: skyblue;
-    opacity: ;
+    opacity: 0.90;
 }
 
 gameMode{
-    /*display: flex;*/
+    display: flex;
+    flex-direction: row;
+    
     outline: 1px black;
-    min-height: 30vh;
-    max-width: 100%;
-    z-index: 3;
-    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
 #startGamelit{
     height: 10vh;
@@ -63,17 +69,21 @@ gameMode{
 }
 #scoreBox{
     display: none;
+    background-color: aliceblue;
 }
 #tallyBox{
     display: none;
 }
 message{
     color: blue;
-    font-size: 40px;
+    font-size: 90px;
 }
 #score{
-    font-size: 100px;
+    font-size: 200px;
 }
 #Question{
     display: block;
+}
+#scoreBox{
+    background-color: brown;
 }

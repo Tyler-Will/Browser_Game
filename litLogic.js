@@ -83,7 +83,7 @@ let y=1
 
 startLit.addEventListener("click", litQuestion1)
 //Question
-let question1="How is the titular antagonist of Bram Stoker's novel, Dracula defeated?"
+let question1="How is Dracula defeated in Bram Stoker's novel?"
 ////Answers
 let answer101= "A knife to the heart"/**/
 let answer102= "Sunlight"
@@ -339,6 +339,7 @@ function resultScreen(){
   //gameAnswers.style.display = "none";
   gameMode.style.display = "none";
 score.innerHTML=`${x};`
+tallyBox.style.display="none";
 }
 
 

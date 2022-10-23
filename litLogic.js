@@ -1,3 +1,5 @@
+
+function Literature(){
 let Question =document.getElementById("Question");
 const gameMode = document.getElementById("gameMode");
 const startLit =document.getElementById("startGamelit");
@@ -72,10 +74,12 @@ let tally =document.getElementById("tally");
 let score =document.getElementById("score");
 
 //Tally
-let x=1
+let x=0
 const y=0
 /*let (x+y)=finalScore*/
 //
+
+
 startLit.addEventListener("click", litQuestion1)
 //Question
 let question1="How is the titular antagonist of Bram Stoker's novel, Dracula defeated?"
@@ -332,6 +336,7 @@ function rightAnswer (){
    x++
     console.log(x)
   }
+
 //function rightAnswer3rd(){
   //Question.innerHTML=`${question3}`;
   //gameAnswers.style.display = "block";
@@ -341,4 +346,5 @@ function rightAnswer (){
 //answer3.innerHTML=`${answer203}`;
 //answer4.innerHTML=`${answer204}`;
 //}
-
+}
+Literature()

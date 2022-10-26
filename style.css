@@ -1,9 +1,8 @@
-*{
+/*{
     outline: 1px solid red;
-    }*
+    }*/
 
     #title{
-        background-color: blue;
         font-size: 100px;
     }
 
@@ -24,27 +23,48 @@ main{
 #tallyBox{
     font-size: 40px;
 }
+#questionBox{
+  border: 10px solid /*transparent*/;
+  padding: 15px;
+  width: 70%;
+  height: 70%;
+  padding: 15px;
+  margin: auto;
+  border-image: url() 300 round stretch;
+  background-color: aliceblue;
+}
 #Question{
-    padding: 1em;
-    font-size: 100px;
-    background-color: rgb(26, 4, 4);
     font-size: 50px;
-    background-color: aliceblue;
+    background:none;
+    block-size: fit-content;
+    
 }
 button{
     background-color: skyblue;
     opacity: 0.90;
+    font-size: 50px;
 }
 
-gameMode{
-    display: flex;
-    flex-direction: row;
-    
-    outline: 1px black;
-    flex-wrap: wrap;
+#gameMode{
+    list-style: none;
     justify-content: space-evenly;
     
 }
+Literature{
+    display: flex;
+    flex-direction: column;
+}
+Film{
+    display: flex;
+    flex-direction: column;
+}
+.modeSelect {
+    height: auto; 
+    width: auto; 
+    max-width: 120px; 
+    max-height: 220px;
+}
+
 #startGamelit{
     height: 10vh;
     width: 80vh;
@@ -81,9 +101,13 @@ message{
 #score{
     font-size: 200px;
 }
+#scoreMessage{
+    font-size: 200px;
+}
 #Question{
     display: block;
 }
 #scoreBox{
-    background-color: brown;
+    background-color: aliceblue;
+    border: 10px double;
 }

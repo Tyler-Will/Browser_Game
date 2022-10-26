@@ -14,19 +14,27 @@
     <message>Congratulations! Your final score is:</message>
     <br>
     <score id="score">0</score>
+    <br>
+    <scoreMessage id="scoreMessage"></scoreMessage>
   </scoreBox>
 
   <div id="tallyBox"><questionTally id="tally">1</questionTally>/10</div>
 </main> 
-  
+  <div id="questionBox">
   <p class id="Question">Welcome to the TestingGrounds! You are about to embark on a magical adventure. Or maybe not, this is just a test run.
         Select a topic below to begin the game.</p>
+  </div>
         
-        
-      <gameMode id="gameMode">
-        <button id="startGamelit">Literature</button>
-        <button id="startGamefilm">Film</button>
-        </gameMode>
+      <ul id="gameMode">
+        <li>
+          <img class="modeSelect" src="Assets\The-Cats-of-Ulthar-HP-Lovecraft-1920.png" alt="cats">
+          <button id="startGamelit">Literature</button>
+        </li>
+        <li>
+          <img class="modeSelect" src="Assets\kisspng-dracula-nosferatu-silhouette-vampire-sulley-5ac4a3d49d3562.1415998615228364366439.png">
+          <button id="startGamefilm">Film</button>
+        </li>
+      </ul>
        
   <gameAnswers id="gameAnswers1">
     <button id="answer1.1" class="Answer">aaaaaaaaa</button>

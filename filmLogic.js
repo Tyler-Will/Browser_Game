@@ -72,13 +72,17 @@ function film(){
   let tally =document.getElementById("tally");
   let tallyBox=document.getElementById("tallyBox")
   let score =document.getElementById("score");
-  
+  let questionBox = document.getElementById("questionBox")
   //Tally
-  let x=0
+  let x=1
   let y=1
   /*let (x+y)=finalScore*/
   //
-  
+  //Success Message
+  let a = "Amazing, a perfect score!"
+  let b = "Impressive, this game is no match for you!"
+  let c = "Not bad, but I've seen better."
+  let d = "That's too bad. Try again next time."
   
   startFilm.addEventListener("click", litQuestion1)
   //Question
@@ -117,7 +121,7 @@ function film(){
   let answer503="Copies were poorly circulated and terribly preserved."
   let answer504="Store owners refused to stock it."
   //Question
-  let question6="Who was the produucer for the 1910 adaptation of Frankenstein?"
+  let question6="Who was the producer for the 1910 adaptation of Frankenstein?"
   ////Answers
   let answer601="Ivan Abramson"
   let answer602="Philip Ford"
@@ -332,6 +336,7 @@ function film(){
   }
   
   function resultScreen(){
+    questionBox.style.display="none";
     gameAnswers10.style.display = "none";
     Question.style.display="none";
     scoreBox.style.display = "block";
@@ -353,8 +358,19 @@ function film(){
   answer4.addEventListener("click", rightAnswer3rd)
   }*/
   function rightAnswer (){
-     x++
-      console.log(x)
+    console.log(x)
+    x++
+      
+
+      if (x <= 3) {
+        scoreMessage.innerHTML = d;
+      } else if (x <= 6 && x >= 4)
+        scoreMessage.innerHTML = c;
+        else if (x <=9 && x >=7)
+        scoreMessage.innerHTML= b;
+      else if (x == 10) {
+        scoreMessage.innerHTML= a;
+      }
     }
   
   //function rightAnswer3rd(){

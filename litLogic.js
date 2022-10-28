@@ -13,59 +13,69 @@ function Literature() {
   const gameAnswers8 = document.getElementById('gameAnswers8');
   const gameAnswers9 = document.getElementById('gameAnswers9');
   const gameAnswers10 = document.getElementById('gameAnswers10');
-  const gameAnswers = document.getElementsByTagName("gameAnswers")
-
+  const gameAnswers = document.getElementsByTagName("gameAnswers");
+  const hintCounter = document.getElementById("hintCounter")
+const hintReveal = document.getElementById("hintReveal");
   //Q1 Answer Selector
   let answerQ101 = document.getElementById("answer1.1");
   let answerQ102 = document.getElementById("answer1.2");
   let answerQ103 = document.getElementById("answer1.3");
   let answerQ104 = document.getElementById("answer1.4");
-
+  let hint101 = document.getElementById("hint1");
   //Q2 Answer Selector
   let answerQ201 = document.getElementById("answer2.1");
   let answerQ202 = document.getElementById("answer2.2");
   let answerQ203 = document.getElementById("answer2.3");
   let answerQ204 = document.getElementById("answer2.4");
+  let hint102 = document.getElementById("hint2");
   //Q3 Answer Selector
   let answerQ301 = document.getElementById("answer3.1");
   let answerQ302 = document.getElementById("answer3.2");
   let answerQ303 = document.getElementById("answer3.3");
   let answerQ304 = document.getElementById("answer3.4");
+  let hint103 = document.getElementById("hint3");
   //Q4 Answer Selector
   let answerQ401 = document.getElementById("answer4.1");
   let answerQ402 = document.getElementById("answer4.2");
   let answerQ403 = document.getElementById("answer4.3");
   let answerQ404 = document.getElementById("answer4.4");
+  let hint104 = document.getElementById("hint4");
   //Q5 Answer Selector
   let answerQ501 = document.getElementById("answer5.1");
   let answerQ502 = document.getElementById("answer5.2");
   let answerQ503 = document.getElementById("answer5.3");
   let answerQ504 = document.getElementById("answer5.4");
+  let hint105 = document.getElementById("hint5");
   //Q6 Answer Selector
   let answerQ601 = document.getElementById("answer6.1");
   let answerQ602 = document.getElementById("answer6.2");
   let answerQ603 = document.getElementById("answer6.3");
   let answerQ604 = document.getElementById("answer6.4");
+  let hint106 = document.getElementById("hint6");
   //Q7 Answer Selector
   let answerQ701 = document.getElementById("answer7.1");
   let answerQ702 = document.getElementById("answer7.2");
   let answerQ703 = document.getElementById("answer7.3");
   let answerQ704 = document.getElementById("answer7.4");
+  let hint107 = document.getElementById("hint7");
   //Q8 Answer Selector
   let answerQ801 = document.getElementById("answer8.1");
   let answerQ802 = document.getElementById("answer8.2");
   let answerQ803 = document.getElementById("answer8.3");
   let answerQ804 = document.getElementById("answer8.4");
+  let hint108 = document.getElementById("hint8");
   //Q9 Answer Selector
   let answerQ901 = document.getElementById("answer9.1");
   let answerQ902 = document.getElementById("answer9.2");
   let answerQ903 = document.getElementById("answer9.3");
   let answerQ904 = document.getElementById("answer9.4");
+  let hint109 = document.getElementById("hint9");
   //Q10 Answer Selector
   let answerQ1001 = document.getElementById("answer10.1");
   let answerQ1002 = document.getElementById("answer10.2");
   let answerQ1003 = document.getElementById("answer10.3");
   let answerQ1004 = document.getElementById("answer10.4");
+  let hint110 = document.getElementById("hint10");
 
 
   //
@@ -78,6 +88,7 @@ function Literature() {
   //Tally
   let x = 1
   let y = 1
+  let h = 0
   /*let (x+y)=finalScore*/
   //
   //Success Message
@@ -93,6 +104,9 @@ function Literature() {
   let answer102 = "Sunlight"
   let answer103 = "A wooden stake to the heart"
   let answer104 = "Tainted blood"
+  /////Hint
+  let hintAnswer1 = "Dracula has never received a truly faithul adaptation. Most of what pop culture knows about Dracula (as well as vampires in general) actually comes from the many adaptations it has received over the years."
+  /////
   //Question
   let question2 = "What is the name of Satan's alleged uncle in Mark Twain's novel The Mysterious Stranger?"
   ////Answers
@@ -100,6 +114,9 @@ function Literature() {
   let answer202 = "Beelzebub"
   let answer203 = "Lucifer"
   let answer204 = "Satan"/**/
+  /////Hint
+  let hintAnswer2 = "Satan has never been known for his honesty and Twain's version is no exception (...or is he?), but he has always been a master at trickery."
+  /////
   //Question
   let question3 = "What two cities are being referenced in the title of Charles Dickens's novel A Tale of Two Cities?"
   ////Answers
@@ -107,6 +124,9 @@ function Literature() {
   let answer302 = "London and Paris"/**/
   let answer303 = "New York and Boston"
   let answer304 = "London and Versailles"
+  /////Hint
+  let hintAnswer3 = "Up until the 1800s it seemed as if those two would never got along."
+  /////
   //Question
   let question4 = "Out the following stories he had written during his lifetime which of these did H.P. Lovecraft favor the most?"
   ////Answers
@@ -114,6 +134,9 @@ function Literature() {
   let answer402 = "Herbert West:Reanimator"
   let answer403 = "The Rats in the Walls"
   let answer404 = "The Dunwich Horror"
+  /////Hint
+  let hintAnswer4 = "Lovecraft was very bigoted (to put it lightly) during his lifetime but there was one race (or rather, species) that he always had a special fondness for."
+  /////
   //Question
   let question5 = "Who was the author responsible for the epic poem, Beowulf?"
   ////Answers
@@ -121,20 +144,29 @@ function Literature() {
   let answer502 = "Homer"
   let answer503 = "Virgil"
   let answer504 = "J. R. R. Tolkien"
+  /////Hint
+  let hintAnswer5 = "Instead of focusing on the names you do recognize take a moment to consider the ones that you don't."
+  /////
   //Question
-  let question6 = "Setanta received rhe name Cú Chulainn after slaying ___"
+  let question6 = "Setanta received the name Cú Chulainn after slaying ___"
   ////Answers
   let answer601 = "A dragon"
   let answer602 = "An ogre"
   let answer603 = "His father"
   let answer604 = "A dog"/**/
+  /////Hint
+  let hintAnswer6 = "This 'name' is more akin to a title and it isn't quite as cool as it sounds."
+  /////
   //Question
-  let question7 = "How many thetrical adaptations of Uncle Tom's Cabin did  Harriet Beecher Stowe co-write?"
+  let question7 = "How many theatrical adaptations of Uncle Tom's Cabin did  Harriet Beecher Stowe co-write?"
   ////Answers
   let answer701 = "7"
   let answer702 = "2"
   let answer703 = "0"/**/
   let answer704 = "4"
+  /////Hint
+  let hintAnswer7 = "Stowe had a distrust of drama. Unfortunately, copyright laws of the time didn't care."
+  /////
   //Question
   let question8 = "What is the title of the 1915 novel where the protagonist inexplicably wakes up as an insect?"
   ////Answers
@@ -142,6 +174,9 @@ function Literature() {
   let answer802 = "A Metamorphoses"
   let answer803 = "The Metamorphoses"
   let answer804 = "The Metamorphosis"/**/
+  /////Hint
+  let hintAnswer8 = "Ovid was a celebrated poet during his day but I don't think he had a fondness for insects, not that the other guy did either."
+  /////
   //Question
   let question9 = "The Hobbit takes place ____ the Lord of the Rings"
   ////Answers
@@ -149,6 +184,9 @@ function Literature() {
   let answer902 = "before"/**/
   let answer903 = "after"
   let answer904 = "in a seperate universe from"
+  /////Hint
+  let hintAnswer9 = "Imagine going from a Lord to a Hobbit."
+  /////
   //Question
   let question10 = "What is the full title of Mary Shelley's 1818 novel?"
   ////Answers
@@ -156,9 +194,13 @@ function Literature() {
   let answer1002 = "Frankenstein; or, The Modern Prometheus"/**/
   let answer1003 = "Mary Shelley's Frankenstein"
   let answer1004 = "Doctor Frankenstein"
-
+  /////Hint
+  let hintAnswer10 = "If you can't figure this one out then try asking the Greeks."
+  /////
 
   function litQuestion1/*"How is the titular antagonist of Bram Stoker's novel, Dracula defeated?"*/() {
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer1
     Question.innerHTML = `${question1}`;
     gameAnswers1.style.display = "block";
     gameMode.style.display = "none";
@@ -172,9 +214,12 @@ function Literature() {
     answerQ103.addEventListener("click", litQuestion2)
     answerQ104.innerHTML = `${answer104}`;
     answerQ104.addEventListener("click", litQuestion2)
+    hint101.addEventListener("click", showHint)
   }
 
   function litQuestion2/*"What is the name of Satan's alleged uncle in Mark Twain's novel The Mysterious Stranger?"*/() {
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer2
     y++;
     tally.innerHTML = `${y}`;
     Question.innerHTML = `${question2}`;
@@ -190,9 +235,12 @@ function Literature() {
     answerQ204.innerHTML = `${answer204}`;
     answerQ204.addEventListener("click", litQuestion3)
     answerQ204.addEventListener("click", rightAnswer)
+    hint102.addEventListener("click", showHint)
   }
 
   function litQuestion3/*"What two cities are being referenced in the title of Charles Dickens's novel A Tale of Two Cities?"*/() {
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer3
     y++;
     tally.innerHTML = `${y}`;
     Question.innerHTML = `${question3}`;
@@ -208,9 +256,12 @@ function Literature() {
     answerQ303.addEventListener("click", litQuestion4)
     answerQ304.innerHTML = `${answer304}`;
     answerQ304.addEventListener("click", litQuestion4)
+    hint103.addEventListener("click", showHint)
   }
 
   function litQuestion4/*"Out the following stories he had written during his lifetime which of these did H.P. Lovecraft favor the most?"*/() {
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer4
     y++;
     tally.innerHTML = `${y}`;
     Question.innerHTML = `${question4}`;
@@ -226,9 +277,12 @@ function Literature() {
     answerQ403.addEventListener("click", litQuestion5)
     answerQ404.innerHTML = `${answer404}`;
     answerQ404.addEventListener("click", litQuestion5)
+    hint104.addEventListener("click", showHint)
   }
 
   function litQuestion5/*"Who was the author responsible for the epic poem, Beowulf?"*/() {
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer5
     y++;
     tally.innerHTML = `${y}`;
     gameAnswers4.style.display = "none";
@@ -244,9 +298,12 @@ function Literature() {
     answerQ503.addEventListener("click", litQuestion6)
     answerQ504.innerHTML = `${answer504}`;
     answerQ504.addEventListener("click", litQuestion6)
+    hint105.addEventListener("click", showHint)
   }
 
   function litQuestion6/*"Setanta earned his famous name Cú Chulainn after slaying ___"*/() {
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer6
     y++;
     tally.innerHTML = `${y}`;
     gameAnswers5.style.display = "none";
@@ -262,9 +319,12 @@ function Literature() {
     answerQ604.innerHTML = `${answer604}`;
     answerQ604.addEventListener("click", litQuestion7)
     answerQ604.addEventListener("click", rightAnswer)
+    hint106.addEventListener("click", showHint)
   }
 
   function litQuestion7/*"How many thetrical adaptations of Uncle Tom's Cabin did  Harriet Beecher Stowe co-write?"*/() {
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer7
     y++;
     tally.innerHTML = `${y}`;
     gameAnswers6.style.display = "none";
@@ -280,9 +340,12 @@ function Literature() {
     answerQ703.addEventListener("click", rightAnswer)
     answerQ704.innerHTML = `${answer704}`;
     answerQ704.addEventListener("click", litQuestion8)
+    hint107.addEventListener("click", showHint)
   }
 
   function litQuestion8/*"What is the title of the 1915 novel where the protagonist inexplicably wakes up as an insect?"*/() {
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer8
     y++;
     tally.innerHTML = `${y}`;
     gameAnswers7.style.display = "none";
@@ -298,9 +361,12 @@ function Literature() {
     answerQ804.innerHTML = `${answer804}`;
     answerQ804.addEventListener("click", litQuestion9)
     answerQ804.addEventListener("click", rightAnswer)
+    hint108.addEventListener("click", showHint)
   }
 
   function litQuestion9/*"The Hobbit is ____ to the Lord of the Rings"*/() {
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer9
     y++;
     tally.innerHTML = `${y}`;
     gameAnswers8.style.display = "none";
@@ -316,9 +382,12 @@ function Literature() {
     answerQ903.addEventListener("click", litQuestion10)
     answerQ904.innerHTML = `${answer904}`;
     answerQ904.addEventListener("click", litQuestion10)
+    hint109.addEventListener("click", showHint)
   }
 
   function litQuestion10/*"What is the full title of Mary Shelley's 1818 novel?"*/() {
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer10
     y++;
     tally.innerHTML = `${y}`;
     gameAnswers9.style.display = "none";
@@ -334,9 +403,11 @@ function Literature() {
     answerQ1003.addEventListener("click", resultScreen)
     answerQ1004.innerHTML = `${answer1004}`;
     answerQ1004.addEventListener("click", resultScreen)
+    hint110.addEventListener("click", showHint)
   }
 
   function resultScreen() {
+    hintReveal.style.display= "none"
     questionBox.style.display="none";
     gameAnswers10.style.display = "none";
     Question.style.display = "none";
@@ -348,16 +419,12 @@ function Literature() {
   }
 
 
-  /*function wrongAnswer(){
-    Question.innerHTML=`${question2}`;
-    gameAnswers.style.display = "block";
-   gameMode.style.display = "none";
-   answer1.innerHTML=`${answer201}`;
-  answer2.innerHTML=`${answer202}`;
-  answer3.innerHTML=`${answer203}`;
-  answer4.innerHTML=`${answer204}`;
-  answer4.addEventListener("click", rightAnswer3rd)
-  }*/
+  function showHint() {
+    hintReveal.style.display= "block"
+    h++
+    console.log(h)
+    hintCounter.innerHTML= h
+  }
   function rightAnswer() {
     console.log(x)
     x++

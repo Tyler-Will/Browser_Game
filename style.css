@@ -111,3 +111,15 @@ message{
     background-color: aliceblue;
     border: 10px double;
 }
+
+#hintReveal{
+    display: none;
+    font-size: x-large;
+}
+hintMessage{
+    font-size: x-large;
+}
+#videoHint{
+    display: none;
+   
+}

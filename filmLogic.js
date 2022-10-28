@@ -13,59 +13,69 @@ function film(){
   const gameAnswers9 = document.getElementById('gameAnswers9');
   const gameAnswers10 = document.getElementById('gameAnswers10');
   const gameAnswers = document.getElementsByTagName("gameAnswers")
-  
+  const hintCounter = document.getElementById("hintCounter")
+  const hintReveal = document.getElementById("hintReveal");
+  const videoHint =document.getElementById("videoHint")
   //Q1 Answer Selector
   let answerQ101 =document.getElementById("answer1.1");
   let answerQ102 =document.getElementById("answer1.2");
   let answerQ103 =document.getElementById("answer1.3");
   let answerQ104 =document.getElementById("answer1.4");
-  
+  let hint101 = document.getElementById("hint1");
   //Q2 Answer Selector
   let answerQ201 =document.getElementById("answer2.1");
   let answerQ202 =document.getElementById("answer2.2");
   let answerQ203 =document.getElementById("answer2.3");
   let answerQ204 =document.getElementById("answer2.4");
+  let hint102 = document.getElementById("hint2");
   //Q3 Answer Selector
   let answerQ301 =document.getElementById("answer3.1");
   let answerQ302 =document.getElementById("answer3.2");
   let answerQ303 =document.getElementById("answer3.3");
   let answerQ304 =document.getElementById("answer3.4");
+  let hint103 = document.getElementById("hint3");
   //Q4 Answer Selector
   let answerQ401 =document.getElementById("answer4.1");
   let answerQ402 =document.getElementById("answer4.2");
   let answerQ403 =document.getElementById("answer4.3");
   let answerQ404 =document.getElementById("answer4.4");
+  let hint104 = document.getElementById("hint4");
   //Q5 Answer Selector
   let answerQ501 =document.getElementById("answer5.1");
   let answerQ502 =document.getElementById("answer5.2");
   let answerQ503 =document.getElementById("answer5.3");
   let answerQ504 =document.getElementById("answer5.4");
+  let hint105 = document.getElementById("hint5");
   //Q6 Answer Selector
   let answerQ601 =document.getElementById("answer6.1");
   let answerQ602 =document.getElementById("answer6.2");
   let answerQ603 =document.getElementById("answer6.3");
   let answerQ604 =document.getElementById("answer6.4");
+  let hint106 = document.getElementById("hint6");
   //Q7 Answer Selector
   let answerQ701 =document.getElementById("answer7.1");
   let answerQ702 =document.getElementById("answer7.2");
   let answerQ703 =document.getElementById("answer7.3");
   let answerQ704 =document.getElementById("answer7.4");
+  let hint107 = document.getElementById("hint7");
   //Q8 Answer Selector
   let answerQ801 =document.getElementById("answer8.1");
   let answerQ802 =document.getElementById("answer8.2");
   let answerQ803 =document.getElementById("answer8.3");
   let answerQ804 =document.getElementById("answer8.4");
+  let hint108 = document.getElementById("hint8");
   //Q9 Answer Selector
   let answerQ901 =document.getElementById("answer9.1");
   let answerQ902 =document.getElementById("answer9.2");
   let answerQ903 =document.getElementById("answer9.3");
   let answerQ904 =document.getElementById("answer9.4");
+  let hint109 = document.getElementById("hint9");
   //Q10 Answer Selector
   let answerQ1001 =document.getElementById("answer10.1");
   let answerQ1002 =document.getElementById("answer10.2");
   let answerQ1003 =document.getElementById("answer10.3");
   let answerQ1004 =document.getElementById("answer10.4");
-  
+  let hint110 = document.getElementById("hint10");
   
   //
   let scoreBox =document.getElementById("scoreBox");
@@ -76,6 +86,7 @@ function film(){
   //Tally
   let x=1
   let y=1
+  let h=0
   /*let (x+y)=finalScore*/
   //
   //Success Message
@@ -92,6 +103,9 @@ function film(){
   let answer102= "Activity Photo"
   let answer103= "Fantasmagorie"
   let answer104= "Steamboat Willie"
+  /////Hint
+  let hintAnswer1 = "This should be easy."
+  /////
   //Question
   let question2="When was the Nebuchadnezzar (the hovercraft featured in The Matrix) built?"
   ////Answers
@@ -99,6 +113,9 @@ function film(){
   let answer202="3000"
   let answer203="2030"
   let answer204="2069"/**/
+  /////Hint
+  let hintAnswer2 = "Far but not too far."
+  /////
   //Question
   let question3="In the 1990 film Nightbreed David Cronenberg plays a psychatrist and serial killer by the name of _______"
   ////Answers
@@ -106,6 +123,9 @@ function film(){
   let answer302="Dr. Decker"/**/
   let answer303="Dr. Brundle"
   let answer304="Dr. Patrick"
+  /////Hint
+  let hintAnswer3 = "His name has a lot of punch to it."
+  /////
   //Question
   let question4="Which of these films was cited as the inspiration for Massive Attack's music video for their song, Voodoo in my Blood?"
   ////Answers
@@ -113,6 +133,9 @@ function film(){
   let answer402="The Exorcist"
   let answer403="Evilspeak"
   let answer404="Scream"
+  /////Hint
+  let hintAnswer4 = ""
+  /////
   //Question
   let question5="Why were so many copies of the film, Nosferatu destroyed?"
   ////Answers
@@ -120,6 +143,9 @@ function film(){
   let answer502="Ordered by a court ruling due to it violating censorship laws at the time."
   let answer503="Copies were poorly circulated and terribly preserved."
   let answer504="Store owners refused to stock it."
+  /////Hint
+  let hintAnswer5 = "If only Stowe were so lucky."
+  /////
   //Question
   let question6="Who was the producer for the 1910 adaptation of Frankenstein?"
   ////Answers
@@ -127,6 +153,9 @@ function film(){
   let answer602="Philip Ford"
   let answer603="Robert Siodmak"
   let answer604="Thomas Edison"/**/
+  /////Hint
+  let hintAnswer6 = "Dr. Frankenstein and the producer had more in common than you'd think."
+  /////
   //Question
   let question7="What was the movie Gone with the Wind known for at the Oscars?"
   ////Answers
@@ -134,6 +163,9 @@ function film(){
   let answer702="First major movie to not win an Oscar"
   let answer703="First black woman to to win an Oscar."/**/
   let answer704="None of the cast appeared at the awards show."
+  /////Hint
+  let hintAnswer7 = "They walked so others could run."
+  /////
   //Question
   let question8="What was the Shawshank?"
   ////Answers
@@ -141,6 +173,9 @@ function film(){
   let answer802="The lost treasure."
   let answer803="The name of a gang."
   let answer804="A prison."/**/
+  /////Hint
+  let hintAnswer8 = "What comes to mind when you hear the word 'shank'?"
+  /////
   //Question
   let question9="What did Cinderella lose?"
   ////Answers
@@ -148,6 +183,9 @@ function film(){
   let answer902="A shoe"/**/
   let answer903="Her ride home"
   let answer904="The apple"
+  /////Hint
+  let hintAnswer9 = "She's lucky that it didn't shatter."
+  /////
   //Question
   let question10="Who was Nemo looking for?"
   ////Answers
@@ -155,9 +193,13 @@ function film(){
   let answer1002="His father"/**/
   let answer1003="A pearl"
   let answer1004="A coral reef"
+  /////Hint
+  let hintAnswer10 = "It's sentient."
+  /////
   
-  
-  function litQuestion1/*"How is the titular antagonist of Bram Stoker's novel, Dracula defeated?"*/(){
+  function litQuestion1/*"What was the first feature-length animated film to ever be released in the U.S.?"*/(){
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer1
    Question.innerHTML=`${question1}`;
    gameAnswers1.style.display = "block";
    gameMode.style.display = "none";
@@ -171,9 +213,12 @@ function film(){
   answerQ103.addEventListener("click", litQuestion2)
   answerQ104.innerHTML=`${answer104}`;
   answerQ104.addEventListener("click", litQuestion2)
+  hint101.addEventListener("click", showHint)
   }
   
-  function litQuestion2/*"What is the name of Satan's alleged uncle in Mark Twain's novel The Mysterious Stranger?"*/(){
+  function litQuestion2/*"When was the Nebuchadnezzar (the hovercraft featured in The Matrix) built?"*/(){
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer2
     y++;
   tally.innerHTML=`${y}`;
     Question.innerHTML=`${question2}`;
@@ -189,9 +234,12 @@ function film(){
   answerQ204.innerHTML=`${answer204}`;
   answerQ204.addEventListener("click", litQuestion3)
   answerQ204.addEventListener("click", rightAnswer)
+  hint102.addEventListener("click", showHint)
   }
   
-  function litQuestion3/*"What two cities are being referenced in the title of Charles Dickens's novel A Tale of Two Cities?"*/(){
+  function litQuestion3/*"In the 1990 film Nightbreed David Cronenberg plays a psychatrist and serial killer by the name of _______"*/(){
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer3
     y++;
   tally.innerHTML=`${y}`;
     Question.innerHTML=`${question3}`;
@@ -207,9 +255,12 @@ function film(){
    answerQ303.addEventListener("click", litQuestion4)
    answerQ304.innerHTML=`${answer304}`;
    answerQ304.addEventListener("click", litQuestion4)
+   hint103.addEventListener("click", showHint)
   }
   
-  function litQuestion4/*"Out the following stories he had written during his lifetime which of these did H.P. Lovecraft favor the most?"*/(){
+  function litQuestion4/*"Which of these films was cited as the inspiration for Massive Attack's music video for their song, Voodoo in my Blood?"*/(){
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = "https://www.youtube.com/embed/ElvLZMsYXlo?start=206"
     y++;
   tally.innerHTML=`${y}`;
     Question.innerHTML=`${question4}`;
@@ -225,9 +276,12 @@ function film(){
    answerQ403.addEventListener("click", litQuestion5)
    answerQ404.innerHTML=`${answer404}`;
    answerQ404.addEventListener("click", litQuestion5)
+   hint104.addEventListener("click", showHint)
   }
   
-  function litQuestion5/*"Who was the author responsible for the epic poem, Beowulf?"*/(){
+  function litQuestion5/*"Why were so many copies of the film, Nosferatu destroyed?"*/(){
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer5
     y++;
   tally.innerHTML=`${y}`;
     gameAnswers4.style.display = "none";
@@ -243,9 +297,12 @@ function film(){
    answerQ503.addEventListener("click", litQuestion6)
    answerQ504.innerHTML=`${answer504}`;
    answerQ504.addEventListener("click", litQuestion6)
+   hint105.addEventListener("click", showHint)
   }
   
-  function litQuestion6/*"Setanta earned his famous name Cú Chulainn after slaying ___"*/(){
+  function litQuestion6/*"Who was the producer for the 1910 adaptation of Frankenstein?"*/(){
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer6
     y++;
   tally.innerHTML=`${y}`;
     gameAnswers5.style.display = "none";
@@ -261,9 +318,12 @@ function film(){
    answerQ604.innerHTML=`${answer604}`;
    answerQ604.addEventListener("click", litQuestion7)
    answerQ604.addEventListener("click", rightAnswer)
+   hint106.addEventListener("click", showHint)
   }
   
-  function litQuestion7/*"How many thetrical adaptations of Uncle Tom's Cabin did  Harriet Beecher Stowe co-write?"*/(){
+  function litQuestion7/*"What was the movie Gone with the Wind known for at the Oscars?"*/(){
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer7
     y++;
   tally.innerHTML=`${y}`;
     gameAnswers6.style.display = "none";
@@ -279,9 +339,12 @@ function film(){
    answerQ703.addEventListener("click", rightAnswer)
    answerQ704.innerHTML=`${answer704}`;
    answerQ704.addEventListener("click", litQuestion8)
+   hint107.addEventListener("click", showHint)
   }
   
-  function litQuestion8/*"What is the title of the 1915 novel where the protagonist inexplicably wakes up as an insect?"*/(){
+  function litQuestion8/*"What was the Shawshank?"*/(){
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer8
     y++;
   tally.innerHTML=`${y}`;
     gameAnswers7.style.display = "none";
@@ -297,9 +360,12 @@ function film(){
    answerQ804.innerHTML=`${answer804}`;
    answerQ804.addEventListener("click", litQuestion9)
    answerQ804.addEventListener("click", rightAnswer)
+   hint108.addEventListener("click", showHint)
   }
   
-  function litQuestion9/*"The Hobbit is ____ to the Lord of the Rings"*/(){
+  function litQuestion9/*"What did Cinderella lose?"*/(){
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer9
     y++;
   tally.innerHTML=`${y}`;
     gameAnswers8.style.display = "none";
@@ -315,9 +381,12 @@ function film(){
    answerQ903.addEventListener("click", litQuestion10)
    answerQ904.innerHTML=`${answer904}`;
    answerQ904.addEventListener("click", litQuestion10)
+   hint109.addEventListener("click", showHint)
   }
   
-  function litQuestion10/*"What is the full title of Mary Shelley's 1818 novel?"*/(){
+  function litQuestion10/*"Who was Nemo looking for?"*/(){
+    hintReveal.style.display= "none"
+    hintReveal.innerHTML = hintAnswer10
     y++;
   tally.innerHTML=`${y}`;
     gameAnswers9.style.display = "none";
@@ -333,9 +402,11 @@ function film(){
    answerQ1003.addEventListener("click", resultScreen)
    answerQ1004.innerHTML=`${answer1004}`;
    answerQ1004.addEventListener("click", resultScreen)
+   hint110.addEventListener("click", showHint)
   }
   
   function resultScreen(){
+    hintReveal.style.display= "none"
     questionBox.style.display="none";
     gameAnswers10.style.display = "none";
     Question.style.display="none";
@@ -345,7 +416,12 @@ function film(){
   score.innerHTML=`${x};`
   tallyBox.style.display="none";
   }
-  
+  function showHint() {
+    hintReveal.style.display= "block"
+    h++
+    console.log(h)
+    hintCounter.innerHTML= h
+  }
   
   /*function wrongAnswer(){
     Question.innerHTML=`${question2}`;

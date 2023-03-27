@@ -198,6 +198,7 @@ function film(){
   /////
   
   function litQuestion1/*"What was the first feature-length animated film to ever be released in the U.S.?"*/(){
+    //document.body.style.backgroundColor = "black";
     hintReveal.style.display= "none"
     hintReveal.innerHTML = hintAnswer1
    Question.innerHTML=`${question1}`;

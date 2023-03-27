@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--<link rel="stylesheet" href="style.css" type="text/css">-->
+    <link rel="stylesheet" href="SCSS/style.css" type="text/css">
 </head>
+<body>
 <main>
   <h2 id="title">Trivia Game</h2>
   
@@ -17,7 +19,7 @@
     <br>
     <scoreMessage id="scoreMessage"></scoreMessage>
     <br>
-    <hintMessage> And you only needed <hintCounter id ="hintCounter">0</hintCounter> hints.</hintMessage>
+    <hintMessage> And you only needed <hintCounter id ="hintCounter">0</hintCounter> hint(s).</hintMessage>
   </scoreBox>
 
   <div id="tallyBox"><questionTally id="tally">1</questionTally>/10</div>
@@ -129,8 +131,9 @@
     <button id="hint10">Hint</button>
   </gameAnswers>
   <hint id="hintReveal">
-    uuuuuuuuuuuuu
+   
   </hint>
   <div id="videoHint"></div>
+</body>
 <script src="litLogic.js"></script>
 <script src ="filmLogic.js"></script>

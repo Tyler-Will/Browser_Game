@@ -1,0 +1,44 @@
+#tallyBox{
+    display: none;
+}
+
+#questionBox{
+    border: 10px solid /*transparent*/;
+    padding: 15px;
+    width: 70%;
+    height: 70%;
+    padding: 15px;
+    margin: auto;
+    border-image: url() 300 round stretch;
+    background-color: aliceblue;
+
+    #Question{
+        font-size: 50px;
+        background:none;
+        block-size: fit-content;
+        
+    }
+  }
+  
+
+gameAnswers{
+    outline: 1px black;
+    min-height: 30vh;
+   max-width: 100%;
+   display: none;
+
+   #hintReveal{
+    display: none;
+    font-size: 50px;
+}
+}
+
+
+  
+//hintMessage{
+    //font-size: x-large;
+//}
+#videoHint{
+    display: none;
+   
+}

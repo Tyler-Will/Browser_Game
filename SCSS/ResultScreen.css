@@ -1,0 +1,15 @@
+#scoreBox {
+  display: none;
+  background-color: aliceblue;
+  border: 10px double;
+}
+#scoreBox message {
+  color: blue;
+  font-size: 90px;
+}
+#scoreBox #score {
+  font-size: 200px;
+}
+#scoreBox #scoreMessage {
+  font-size: 200px;
+}/*# sourceMappingURL=ResultScreen.css.map */

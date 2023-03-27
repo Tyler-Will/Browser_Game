@@ -1,0 +1,110 @@
+button {
+  background-color: skyblue;
+  opacity: 0.9;
+  font-size: 50px;
+}
+button:hover {
+  background-color: #002ead;
+  transition: 0.7s;
+}
+
+.modeSelect {
+  height: auto;
+  width: auto;
+  max-width: 120px;
+  max-height: 220px;
+}
+
+#tallyBox {
+  display: none;
+}
+
+#questionBox {
+  border: 10px solid;
+  padding: 15px;
+  width: 70%;
+  height: 70%;
+  padding: 15px;
+  margin: auto;
+  -o-border-image: url() 300 round stretch;
+     border-image: url() 300 round stretch;
+  background-color: aliceblue;
+}
+#questionBox #Question {
+  font-size: 50px;
+  background: none;
+  block-size: -moz-fit-content;
+  block-size: fit-content;
+}
+
+gameAnswers {
+  outline: 1px black;
+  min-height: 30vh;
+  max-width: 100%;
+  display: none;
+}
+gameAnswers #hintReveal {
+  display: none;
+  font-size: 50px;
+}
+
+#videoHint {
+  display: none;
+}
+
+#scoreBox {
+  display: none;
+  background-color: aliceblue;
+  border: 10px double;
+}
+#scoreBox message {
+  color: blue;
+  font-size: 90px;
+}
+#scoreBox #score {
+  font-size: 200px;
+}
+#scoreBox #scoreMessage {
+  font-size: 200px;
+}
+
+#title {
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #cccccc;
+  background-image: none;
+  background-size: cover;
+  padding: 5em;
+  padding-top: 0%;
+}
+
+#tallyBox {
+  font-size: 40px;
+}
+
+#gameMode {
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+#startGamelit, #startGamefilm {
+  height: 10vh;
+  width: 80vh;
+}
+
+.gameAnswers {
+  display: block;
+}
+
+.Answer {
+  min-height: 10vh;
+  min-width: 80vh;
+}
+
+#Question {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

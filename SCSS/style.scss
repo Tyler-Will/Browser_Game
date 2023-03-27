@@ -1,0 +1,60 @@
+@import 'buttons';
+@import 'DisplayBoxes';
+@import 'ResultScreen';
+@import 'HintDisplay';
+
+$background-color: #cccccc;
+
+#title{
+    font-size: 100px;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+    background-color: $background-color;
+    background-image: none;
+    background-size:cover;
+    padding: 5em;
+    padding-top: 0%
+    
+}
+ 
+#tallyBox{
+    font-size: 40px;
+}
+
+
+#gameMode{
+    list-style: none;
+    justify-content: space-evenly;
+    
+}
+//Literature{
+    //display: flex;
+    //flex-direction: column;
+//}
+//Film{
+    //display: flex;
+    //flex-direction: column;
+//}
+
+#startGamelit,#startGamefilm{
+    height: 10vh;
+    width: 80vh;
+}
+
+.gameAnswers{
+    display: block;
+}
+
+.Answer{
+    min-height: 10vh;
+    min-width: 80vh;
+}
+
+#Question{
+    display: block;
+}
+
+

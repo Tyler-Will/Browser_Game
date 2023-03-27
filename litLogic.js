@@ -168,7 +168,7 @@ const hintReveal = document.getElementById("hintReveal");
   let hintAnswer7 = "Stowe had a distrust of drama. Unfortunately, copyright laws of the time didn't care."
   /////
   //Question
-  let question8 = "What is the title of the 1915 novel where the protagonist inexplicably wakes up as an insect?"
+  let question8 = "What is the title of the 1915 novella where the protagonist inexplicably wakes up as an insect?"
   ////Answers
   let answer801 = "Frankenstein"
   let answer802 = "A Metamorphoses"
@@ -199,6 +199,7 @@ const hintReveal = document.getElementById("hintReveal");
   /////
 
   function litQuestion1/*"How is the titular antagonist of Bram Stoker's novel, Dracula defeated?"*/() {
+    //document.body.style.backgroundColor = "brown";
     hintReveal.style.display= "none"
     hintReveal.innerHTML = hintAnswer1
     Question.innerHTML = `${question1}`;

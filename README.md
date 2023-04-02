@@ -1,8 +1,6 @@
 # The Testing Grounds
 
---Description
-A simple trivia game that I made to test my understanding of Javascript and the DOM. I chose a trivia game because I initially wanted to do a text adventure but that seemed too ambitious for the alloted time. 
-The game is played entirely with the mouse and the questions will be based on one of two pre-determined themes selected by the player at the start (Literature and Film). Each one has ten questions with four possible answers. The player's score will be displayed at the end.
+## A simple trivia game that I made to test my understanding of Javascript and the DOM.
 
 Future updates to the game have added a hint button as well. When clicked, the button will display a brief message or, in the case of one question a link to a video, that will help the player by providing additional information or subtly hinting at the answer.
 

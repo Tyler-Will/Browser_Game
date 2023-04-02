@@ -1,5 +1,4 @@
---Title and Formatting
-The Testing Grounds
+# The Testing Grounds
 
 --Description
 A simple trivia game that I made to test my understanding of Javascript and the DOM. I chose a trivia game because I initially wanted to do a text adventure but that seemed too ambitious for the alloted time. 

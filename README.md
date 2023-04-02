@@ -1,9 +1,9 @@
 # The Testing Grounds
 
 ## A game designed to test the player's knowledge of useless literature and film trivia.
-*The game is played entirely with the mouse and the questions will be based on one of two pre-determined themes selected by the player at the start (Literature and Film). 
-*Each one has ten questions with four possible answers. 
-*The player's score will be displayed at the end.
+* The game is played entirely with the mouse and the questions will be based on one of two pre-determined themes selected by the player at the start (Literature and Film). 
+* Each one has ten questions with four possible answers. 
+* The player's score will be displayed at the end.
 
 Future updates to the game have added a hint button as well. When clicked, the button will display a brief message or, in the case of one question a link to a video, that will help the player by providing additional information or subtly hinting at the answer.
 

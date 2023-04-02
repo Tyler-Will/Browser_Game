@@ -4,8 +4,7 @@
 * The game is played entirely with the mouse and the questions will be based on one of two pre-determined themes selected by the player at the start (Literature and Film). 
 * Each one has ten questions with four possible answers. 
 * The player's score will be displayed at the end.
-
-Future updates to the game have added a hint button as well. When clicked, the button will display a brief message or, in the case of one question a link to a video, that will help the player by providing additional information or subtly hinting at the answer.
+* Future updates to the game have added a hint button as well. Clicking it will reveal a hint or additional trivia that will help the user narrow down the answer. Using it will not subtract from the player's score but the number of times a hint was used will be displayed at the end.
 
 ![](ReadmeImages/hint.png)
 
